@@ -14,6 +14,7 @@
 		5706D629204196CA00B350ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5706D627204196CA00B350ED /* LaunchScreen.storyboard */; };
 		5706D6312041AA4A00B350ED /* ViewControllerTela2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */; };
 		5706D6332041D29600B350ED /* ViewControllerTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6322041D29600B350ED /* ViewControllerTableview.swift */; };
+		5706D6352041D70300B350ED /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6342041D70300B350ED /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5706D62A204196CA00B350ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTela2.swift; sourceTree = "<group>"; };
 		5706D6322041D29600B350ED /* ViewControllerTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableview.swift; sourceTree = "<group>"; };
+		5706D6342041D70300B350ED /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		5706D61D204196CA00B350ED /* sample */ = {
 			isa = PBXGroup;
 			children = (
+				5706D6342041D70300B350ED /* CustomCell.swift */,
 				5706D61E204196CA00B350ED /* AppDelegate.swift */,
 				5706D620204196CA00B350ED /* ViewController.swift */,
 				5706D622204196CA00B350ED /* Main.storyboard */,
@@ -144,6 +147,7 @@
 			files = (
 				5706D621204196CA00B350ED /* ViewController.swift in Sources */,
 				5706D6312041AA4A00B350ED /* ViewControllerTela2.swift in Sources */,
+				5706D6352041D70300B350ED /* CustomCell.swift in Sources */,
 				5706D6332041D29600B350ED /* ViewControllerTableview.swift in Sources */,
 				5706D61F204196CA00B350ED /* AppDelegate.swift in Sources */,
 			);

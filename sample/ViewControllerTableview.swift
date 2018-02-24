@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewControllerTableview: UIViewController {
+class ViewControllerTableview: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var myTableView: UITableView!
+    
+    private let menu = ["Pizzas", "Bebidas", "Sobremesas"]
+    private let itens = [
+        ["Calabresa", "California", "Mussarela", "Portuguesa", "Quatro Queijos"],
+        ["Cervejas", "Vinhos", "Sucos"],
+        ["Salada de Frutas", "Sorvete", "Torta Doce"],
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +31,24 @@ class ViewControllerTableview: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return menu.count
     }
-    */
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itens[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return menu[section]
+    }
+   
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let customCell = myTableView.dequeueReusableCell(withIdentifier: "customCell") as! CustomCell
+        let obj = itens[indexPath.section][indexPath.row]
+        customCell.imageView?.image = UIImage(named : obj)
+        customCell.label.text = obj
+        return customCell
+    }
+    
 }
