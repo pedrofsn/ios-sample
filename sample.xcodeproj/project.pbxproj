@@ -12,6 +12,8 @@
 		5706D624204196CA00B350ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5706D622204196CA00B350ED /* Main.storyboard */; };
 		5706D626204196CA00B350ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5706D625204196CA00B350ED /* Assets.xcassets */; };
 		5706D629204196CA00B350ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5706D627204196CA00B350ED /* LaunchScreen.storyboard */; };
+		5706D6312041AA4A00B350ED /* ViewControllerTela2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */; };
+		5706D6332041D29600B350ED /* ViewControllerTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6322041D29600B350ED /* ViewControllerTableview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5706D625204196CA00B350ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5706D628204196CA00B350ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5706D62A204196CA00B350ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTela2.swift; sourceTree = "<group>"; };
+		5706D6322041D29600B350ED /* ViewControllerTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				5706D625204196CA00B350ED /* Assets.xcassets */,
 				5706D627204196CA00B350ED /* LaunchScreen.storyboard */,
 				5706D62A204196CA00B350ED /* Info.plist */,
+				5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */,
+				5706D6322041D29600B350ED /* ViewControllerTableview.swift */,
 			);
 			path = sample;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5706D621204196CA00B350ED /* ViewController.swift in Sources */,
+				5706D6312041AA4A00B350ED /* ViewControllerTela2.swift in Sources */,
+				5706D6332041D29600B350ED /* ViewControllerTableview.swift in Sources */,
 				5706D61F204196CA00B350ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
