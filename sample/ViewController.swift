@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var uiSwitch: UISwitch!
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
@@ -42,12 +44,35 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onSwitchValueChanged(_ uiSwitch: UISwitch) {
-        changeVisibility(uiSwitch.isOn)
+        handleFlashLight(uiSwitch.isOn)
     }
     
-    func changeVisibility(_ visible : Bool){
-        imageView?.isHidden = !visible
-        segmentedControl?.isHidden = !visible
-        label?.isHidden = !visible
+    func handleFlashLight(_ isOn : Bool) {
+        let device = AVCaptureDevice.default(for : AVMediaType.video)
+        
+        if(device != nil && device!.hasTorch) {
+            do {
+                try device!.lockForConfiguration()
+                
+                if(device!.hasTorch) {
+                    device!.torchMode = isOn ? .on : .off
+                }
+                
+                device!.unlockForConfiguration()
+            } catch {
+                
+            }
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        handleUIElementsVisibility()
+    }
+    
+    func handleUIElementsVisibility(){
+        imageView?.isHidden = !imageView.isHidden
+        segmentedControl?.isHidden = !segmentedControl.isHidden
+        uiSwitch?.isHidden = !uiSwitch.isHidden
+        label?.isHidden = !label.isHidden
     }
 }
