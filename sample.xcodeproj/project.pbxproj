@@ -15,6 +15,10 @@
 		5706D6312041AA4A00B350ED /* ViewControllerTela2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */; };
 		5706D6332041D29600B350ED /* ViewControllerTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6322041D29600B350ED /* ViewControllerTableview.swift */; };
 		5706D6352041D70300B350ED /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5706D6342041D70300B350ED /* CustomCell.swift */; };
+		57F7CF2E204ABC0E0093FC71 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CF2D204ABC0E0093FC71 /* ViewControllerLogin.swift */; };
+		57F7CF30204ABFE80093FC71 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CF2F204ABFE80093FC71 /* ViewControllerHome.swift */; };
+		57F7CF32204AC5AA0093FC71 /* ViewControllerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CF31204AC5AA0093FC71 /* ViewControllerProfile.swift */; };
+		57F7CF34204ACFEA0093FC71 /* ViewControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CF33204ACFEA0093FC71 /* ViewControllerMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTela2.swift; sourceTree = "<group>"; };
 		5706D6322041D29600B350ED /* ViewControllerTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableview.swift; sourceTree = "<group>"; };
 		5706D6342041D70300B350ED /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		57F7CF2D204ABC0E0093FC71 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
+		57F7CF2F204ABFE80093FC71 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		57F7CF31204AC5AA0093FC71 /* ViewControllerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProfile.swift; sourceTree = "<group>"; };
+		57F7CF33204ACFEA0093FC71 /* ViewControllerMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				5706D62A204196CA00B350ED /* Info.plist */,
 				5706D6302041AA4A00B350ED /* ViewControllerTela2.swift */,
 				5706D6322041D29600B350ED /* ViewControllerTableview.swift */,
+				57F7CF2D204ABC0E0093FC71 /* ViewControllerLogin.swift */,
+				57F7CF2F204ABFE80093FC71 /* ViewControllerHome.swift */,
+				57F7CF31204AC5AA0093FC71 /* ViewControllerProfile.swift */,
+				57F7CF33204ACFEA0093FC71 /* ViewControllerMap.swift */,
 			);
 			path = sample;
 			sourceTree = "<group>";
@@ -147,8 +159,12 @@
 			files = (
 				5706D621204196CA00B350ED /* ViewController.swift in Sources */,
 				5706D6312041AA4A00B350ED /* ViewControllerTela2.swift in Sources */,
+				57F7CF34204ACFEA0093FC71 /* ViewControllerMap.swift in Sources */,
+				57F7CF30204ABFE80093FC71 /* ViewControllerHome.swift in Sources */,
+				57F7CF2E204ABC0E0093FC71 /* ViewControllerLogin.swift in Sources */,
 				5706D6352041D70300B350ED /* CustomCell.swift in Sources */,
 				5706D6332041D29600B350ED /* ViewControllerTableview.swift in Sources */,
+				57F7CF32204AC5AA0093FC71 /* ViewControllerProfile.swift in Sources */,
 				5706D61F204196CA00B350ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
